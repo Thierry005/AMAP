@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Centre Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            height: 630px;
+        }
+
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            margin-left: 22%;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .textbox {
+            width: 30%; /* Adjust size as needed */
+            background-color: rgba(255, 255, 255, 0.6); /* 60% transparency */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .textbox img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #language-selector {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+        }
+
+        #language-selector img {
+            width: 30px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+     <img id="logo" src="AMAP sc/AMAP logo.png" alt="AMAP Shopping Centre">
+    <input type="text" placeholder="Search" style="float: right; margin-top: 10px; margin-right: 10px;">
+</header>
+<nav>
+     <a href="index.html"><img src="AMAP sc/Home icon.png" alt="Home" width="35" height="35">      Home </a>
+    <a href="#"><img src="AMAP sc/parking icon.png" alt="Parking" width="35" height="35"> Parking </a>
+    <a href="Banks.html"><img src="AMAP sc/money sign.png" alt="Banks" width="35" height="35"> Banks</a>
+    <a href="Shopping page.html"><img src="AMAP sc/shopping icon.png" alt="Shopping" width="35" height="35"> Shopping </a>
+    <a href="Food Site.html"><img src="AMAP sc/food icon.png" alt="Food" width="35" height="35"> Food </a>
+    <a href="#"><img src="AMAP sc/special offers.png" alt="Special Offers" width="35" height="35"> Special Offers </a>
+    <a href="The Map.html"><img src="AMAP sc/map icon.png" alt="Map" width="35" height="35"> Map </a>
+    <a href="#"><img src="AMAP sc/fire exit.png" alt="Centre Information - Fire Escapes" width="35" height="35"> Centre Information - Fire Escapes </a>
+    <a href="Help page.html"><img src="AMAP sc/info icon.png" alt="Help" width="35" height="35"> Help </a>
+</nav>
+<div id="map-container">
+    <div class="map">
+        <!-- Your first map image goes here -->
+        <img src="AMAP sc/top floor.png" alt="Map 1" width="900" height="650">
+        
+        <!-- Example icons for first map, replace with your actual icons -->
+        <img src="icon1_1.png" alt="Icon 1" class="icon" style="left: 100px; top: 200px;">
+        <img src="icon2_1.png" alt="Icon 2" class="icon" style="left: 300px; top: 250px;">
+    </div>
+
+    <div class="map">
+        <!-- Your second map image goes here -->
+        <img src="AMAP sc/second floor.png" alt="Map 2" width="900" height="650" >
+        
+        <!-- Example icons for second map, replace with your actual icons -->
+        <img src="icon1_2.png" alt="Icon 1" class="icon" style="left: 100px; top: 200px;">
+        <img src="icon2_2.png" alt="Icon 2" class="icon" style="left: 300px; top: 250px;">
+    </div>
+</div>
+
+<!-- Example directions, replace with your actual directions -->
+<div class="directions" id="directions1">Directions to destination 1 on Map 1.</div>
+<div class="directions" id="directions2">Directions to destination 2 on Map 1.</div>
+<div class="directions" id="directions3">Directions to destination 1 on Map 2.</div>
+<div class="directions" id="directions4">Directions to destination 2 on Map 2.</div>
+
+<footer>
+    <div id="language-selector">
+        <img src="AMAP sc/France.png" alt="France">
+        <img src="AMAP sc/Spain flag.png" alt="Spain">
+        <img src="AMAP sc/POLAND.png" alt="Poland">
+		<img src="AMAP sc/Saudi.png" alt="Arabic">
+		<img src="AMAP sc/Englang flag.png" alt="English">
+        <!-- Add more flags as needed -->
+    </div>
+</footer>
+
+</body>
+</html>

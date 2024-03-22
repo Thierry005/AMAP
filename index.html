@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Centre Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #logo {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            height: 630px;
+			width 300px;
+        }
+
+        nav a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            margin-bottom: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            margin-left: 22%;
+            padding: 20px;
+        }
+
+        .textbox {
+            width: 30%; /* Adjust size as needed */
+            background-color: rgba(255, 255, 255, 0.6); /* 60% transparency */
+            padding: 20px;
+            margin: 10px;
+            float: left;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .textbox img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            padding: 10px;
+            text-align: left;
+        }
+
+        #language-selector {
+            display: flex;
+            align-items: center;
+        }
+
+        #language-selector img {
+            width: 30px; /* Adjust size as needed */
+            height: auto;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img id="logo" src="AMAP sc/AMAP logo.png" alt="AMAP Shopping Centre">
+    <input type="text" placeholder="Search" style="float: right; margin-top: 10px; margin-right: 10px;">
+</header>
+
+<nav>
+    <a href="index.html"><img src="AMAP sc/Home icon.png" alt="Home" width="35" height="35">      Home </a>
+    <a href="#"><img src="AMAP sc/parking icon.png" alt="Parking" width="35" height="35"> Parking </a>
+    <a href="Banks.html"><img src="AMAP sc/money sign.png" alt="Banks" width="35" height="35"> Banks</a>
+    <a href="Shopping page.html"><img src="AMAP sc/shopping icon.png" alt="Shopping" width="35" height="35"> Shopping </a>
+    <a href="Food Site.html"><img src="AMAP sc/food icon.png" alt="Food" width="35" height="35"> Food </a>
+    <a href="#"><img src="AMAP sc/special offers.png" alt="Special Offers" width="35" height="35"> Special Offers </a>
+    <a href="The Map.html"><img src="AMAP sc/map icon.png" alt="Map" width="35" height="35"> Map </a>
+    <a href="#"><img src="AMAP sc/fire exit.png" alt="Centre Information - Fire Escapes" width="35" height="35"> Centre Information - Fire Escapes </a>
+    <a href="Help page.html"><img src="AMAP sc/info icon.png" alt="Help" width="35" height="35"> Help </a>
+</nav>
+
+
+<section>
+    <div id="slideshow-container">
+        <div class="slide">
+            <img src="AMAP sc/Taco Bell deal.png" alt="Taco Bell">
+        </div>
+        <div class="slide">
+            <img src="AMAP sc/Popeyes deal.png" alt="Popeyes">
+        </div>
+        <div class="slide">
+            <img src="AMAP sc/KFC deal.png" alt="Kfc">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+</section>
+
+<footer>
+    <div id="language-selector">
+        <img src="AMAP sc/France.png" alt="France">
+        <img src="AMAP sc/Spain flag.png" alt="Spain">
+        <img src="AMAP sc/POLAND.png" alt="Poland">
+		<img src="AMAP sc/Saudi.png" alt="Arabic">
+		<img src="AMAP sc/Englang flag.png" alt="English">
+        <!-- Add more flags as needed -->
+    </div>
+</footer>
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    showSlides();
+</script>
+
+</body>
+</html>
+
+
+
+
